@@ -8,7 +8,7 @@ import { Todo } from "../App";
 // - toggleComplete 함수는 매개변수로 number 타입의 변수 id를 받으며, 반환값은 없습니다.
 interface TodoItemProps { 
   todo:Todo; 
-  toggleComplete: (id:number) => void; 
+  toggleComplete: (id:number): void; 
 }
 
 //2. 전달받은 todo,toggleComplete가 올바른 타입으로 인식되도록 타입을 적용하세요.

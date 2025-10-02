@@ -10,7 +10,7 @@ import { Todo } from "../App";
 // - showCompleted 변수는 boolean 타입입니다.
 interface TodoListProps {
   todos: { id: number, text: string, completed: boolean }[];
-  toggleComplete: (id: number) => void;
+  toggleComplete: (id: number): void;
   showCompleted: boolean;
 }
 

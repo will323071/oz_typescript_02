@@ -8,12 +8,12 @@ import "../styles/AddTodo.css";
 
 
 interface AddTodoProps {
-  addtodo: (text: string) => void;
+  addTodo: (text: string): void;
 }
 
 //2. 전달받은 addTodo가 올바른 타입으로 인식되도록 타입을 적용하세요.
 //힌트 : 리액트에서 props의 타입을 정의하는 방법 -> ({props 이름} : props타입)
-const AddTodo: React.FC<AddTodoProps> = ({ addtodo }: AddTodoProps) => {
+const AddTodo: React.FC<AddTodoProps> = ({ addTodo }: AddTodoProps) => {
   const [text, setText] = useState("");
 
   //이벤트 객체는 React.FormEvent<HTMLFormElement> 타입입니다.
